@@ -5,6 +5,12 @@ function addToConsole(message) {
   consoleDiv.scrollTop = consoleDiv.scrollHeight;
 }
 
+
+// ------------------
+// THE MAIN FUNCTION
+//-------------------
+
+
 // Function to find the average of an array
 function findAvg(arr) {
   var sum = 0;
@@ -12,8 +18,13 @@ function findAvg(arr) {
     sum += arr[i];
   }
   var avg = sum / arr.length;
-  addToConsole("Average: " + avg);
+  addToConsole("Average: " + avg); // return avg;
 }
+
+
+// ------------------
+// ------------------
+
 
 // Function to execute the selected program with user-provided arguments
 function runProgram(args) {

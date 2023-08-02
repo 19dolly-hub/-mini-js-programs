@@ -5,6 +5,12 @@ function addToConsole(message) {
     consoleDiv.scrollTop = consoleDiv.scrollHeight;
   }
   
+
+//-------------------
+// THE MAIN FUNCTION    
+//-------------------
+
+
 // Function to find maximum number from an array
 function findMax(arr) {
     var maxNum = arr[0];
@@ -16,8 +22,13 @@ function findMax(arr) {
             maxNum = maxNum;
         }
     }
-    addToConsole('Maximum number: ' + maxNum);
+    addToConsole('Maximum number: ' + maxNum); // return maxNum;
 }
+
+
+//-------------------
+//-------------------
+
 
 // Function to execute the selected program with user-provided arguments
 function runProgram(args) {

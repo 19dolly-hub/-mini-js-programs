@@ -4,14 +4,25 @@ function print(out) {
     div.innerHTML += out + "<br>";
 }
 
+
+//-------------------
+// THE MAIN FUNCTION    
+//-------------------
+
+
 // function to reverse the string
 function reverseIt(str) {
     let strArr = str.split('');
     let reversedArr = strArr.reverse();
     let reversedStr = reversedArr.join('');
-    // return reversedStr;
-    print("Reversed String: " + reversedStr);
+
+    print("Reversed String: " + reversedStr); // return reversedStr;
 }
+
+
+//-------------------
+//-------------------
+
 
 // run program
 function run(string) {
