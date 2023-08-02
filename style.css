@@ -158,3 +158,10 @@ footer {
   text-transform: capitalize;
   padding: 2%;
 }
+
+
+ @media (max-width: 600px) {
+  section {
+    flex-direction: column;
+  }
+ }
