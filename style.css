@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(45deg, silver, slategray);
+  background-attachment: fixed;
+}
+
+header {
+  padding: 1.5vmin 0;
+  text-transform: uppercase;
+  background-color: slategray;
+  background-color: rgb(67, 80, 91);
+  color: silver;
+  color: #e9e9e9;
+}
+
+header h4 {
+  -webkit-text-stroke-color: #e9e9e9;
+  -webkit-text-stroke-width: 0.5px;
+  color: transparent;
+}
+
+header p {
+  font-size: small;
+}
+
+main {
+  height: 100%;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 5px;
+  gap: 2vh;
+  border-bottom: 1px solid slategray;
+}
+
+section h3 {
+  text-decoration: underline;
+  color: rgb(47, 64, 79);
+}
+
+section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.8px solid rgb(47, 64, 79);
+  border: 1.8px solid rgb(67, 80, 91);
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(47, 64, 79);
+  cursor: pointer;
+}
+
+section div .btn {
+  display: flex;
+  flex-direction: row;
+  padding: 2vh;
+  gap: 3vh;
+}
+
+section div .img {
+  height: 10vh;
+  width: 28vh;
+  background-color: #e9e9e9;
+  margin-top: 2vh;
+  border: 1.5px solid rgb(155 173 188);
+  /* padding: 11%; */
+  color: rgb(67, 80, 91);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Terminal-like look for section div .img */
+/* section div .img {
+  height: 10vh;
+  width: 28vh;
+  background-color: #2d2d2d; /* Dark gray background color */
+  /* margin-top: 2vh;
+  padding: 11%;
+  color: #00ff00; /* Green text color */
+  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+} */ 
+
+/* Terminal dots style */
+.dot-container {
+  background-color: rgb(67, 80, 91);
+  height: 15%;
+  padding: 6px 0 10px 6px;
+}
+
+.terminal-dots {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #00ff00;
+  background-color: #e9e9e9;
+  /* margin-left: 12px; */
+  box-shadow: 6px 0 0 #00ff00, 12px 0 0 #00ff00;
+  box-shadow: 6px 0 0 #e9e9e9, 12px 0 0 #e9e9e9;
+  /* position: absolute;  /* top: 50%;
+  left: 12px;
+  transform: translateY(-50%); */ 
+}
+
+/* Program title style */
+section div .img h4 {
+  /* color: #00ff00; Green text color */
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 10px;
+  /* margin-left: 30px; Adjust the margin to create space after the dots */
+}
+
+.btn a {
+  color: rgb(67, 80, 91);
+  border: 1.5px solid rgb(47, 64, 79);
+  border: 1.5px solid rgb(67, 80, 91);
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn a:hover {
+  background-color: rgb(67, 80, 91);
+  color: #fff;
+}
+
+footer {
+  color: rgb(47, 64, 79);
+  background-color: rgb(67, 80, 91);
+  color: #e9e9e9;
+  text-transform: capitalize;
+  padding: 2%;
+}

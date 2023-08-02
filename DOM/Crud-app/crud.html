@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD APP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>CRUD APP</h2>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <input type="text" placeholder="item-name" required>
+            <button id="add-btn">Add</button>
+        </section>
+        <section>
+            <ul>
+                <li class="item">
+                    <p>Item 1</p>
+                    <button id="edit-btn" onclick="editItem(this)">Edit</button>
+                    <button id="x-btn" onclick="removeItem(this)">Delete</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Create Read Update Delete</p>
+    </footer>
+    <script src="crud.js"></script>
+</body>
+</html>
