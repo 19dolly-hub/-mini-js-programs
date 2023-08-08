@@ -15,7 +15,9 @@ function getInput() {
 }
 
 button.addEventListener("click", getInput);
-copyBtn.addEventListener('click', () => {
-  console.log(copyText);
+copyBtn.addEventListener('click', (e) => {
+  console.log(copyText, e);
   navigator.clipboard.writeText(copyText);
+  e.target.innerText = "Copied";
+  e.target.style.color = "gray";
 });

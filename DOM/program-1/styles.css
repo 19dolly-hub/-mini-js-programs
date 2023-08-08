@@ -50,6 +50,7 @@
   .head {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
   }
 
@@ -67,6 +68,9 @@
     color: yellowgreen;
     padding: 10px;
     border-radius: 5px;
+  }
+
+  #program .code {
     overflow-x: auto;
   }
 
