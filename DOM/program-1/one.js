@@ -9,8 +9,8 @@ function getInput() {
   alert("Hello " + input + " see the output printed below!");
   
   heading.innerText = "Hello! amazing " + input.toUpperCase();
+  program.style.display = "block";
   }
-  console.log(typeof button.textContent);
 }
 
 button.addEventListener("click", getInput);

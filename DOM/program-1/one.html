@@ -14,7 +14,25 @@
     <section class="prompt-section">
       <p>Click the button to get input prompt...</p>
       <button>Not clicked❗</button>
+      <!-- <h3></h3> -->
+    </section>
+    <section class="output-section">
       <h3></h3>
+      <div id="program">
+        <h4>Basic Program:</h4>
+        <hr>
+        <pre>
+
+          let btn = document.querySelector('button');
+          
+          function getPrompt() {
+            let input = prompt('Write your name...');
+            alert('Hello! amazing ' + input.toUpperCase());
+          }
+
+          btn.addEventListner('click', getPrompt);
+        </pre>
+      </div>
     </section>
   </main>
   <footer>
