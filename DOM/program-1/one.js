@@ -1,11 +1,12 @@
-var button = document.querySelector("button");
-var heading = document.querySelector('h3');
+const button = document.querySelector("button");
+const heading = document.querySelector('h3');
+const copyText = document.querySelector('#program pre').innerText;
 
 function getInput() {
   if(button.textContent.includes("Not")) {
   button.innerText = "Clicked✅";
 
-  var input = prompt("Write your name here...");
+  const input = prompt("Write your name here...");
   alert("Hello " + input + " see the output printed below!");
   
   heading.innerText = "Hello! amazing " + input.toUpperCase();
@@ -14,3 +15,7 @@ function getInput() {
 }
 
 button.addEventListener("click", getInput);
+copyBtn.addEventListener('click', () => {
+  console.log(copyText);
+  navigator.clipboard.writeText(copyText);
+});

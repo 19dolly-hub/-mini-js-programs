@@ -19,18 +19,21 @@
     <section class="output-section">
       <h3></h3>
       <div id="program">
-        <h4>Basic Program:</h4>
+        <div class="head">
+          <h4>Basic Program:</h4>
+          <button id="copyBtn">Copy</button>
+        </div>
         <hr>
         <pre>
 
-          let btn = document.querySelector('button');
+ const btn = document.querySelector('button');
           
-          function getPrompt() {
-            let input = prompt('Write your name...');
-            alert('Hello! amazing ' + input.toUpperCase());
-          }
+ function getPrompt() {
+  const input = prompt('Write your name...');
+  alert('Hello! amazing ' + input.toUpperCase());
+ }
 
-          btn.addEventListner('click', getPrompt);
+  btn.addEventListner('click', getPrompt);
         </pre>
       </div>
     </section>
