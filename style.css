@@ -139,5 +139,9 @@ footer {
  @media (max-width: 600px) {
   section {
     flex-direction: column;
+    overflow-y: auto;
+    max-height: 60vh;  
+    flex-wrap: nowrap;
+    margin: 0 25px;
   }
  }
