@@ -71,10 +71,15 @@ body {
     justify-content: space-between;
     margin-bottom: 10px;
     gap: 2px;
+    flex-wrap: wrap;
   }
   
   .item p {
     flex-grow: 1;
+  }
+
+  .item span {
+    overflow: hidden;
   }
 
   .remove-msg {

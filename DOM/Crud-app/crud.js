@@ -7,7 +7,7 @@ let parentUl = document.querySelector("ul");
 function addItem(e) {
   let currentElem = e.target;
   let inputElem = currentElem.previousElementSibling;
-  if (parentUl.children[0].className == "remove-msg") {
+  if (parentUl.children[0].className == "remove-msg" && inputElem.value.trim() != "") {
     parentUl.children[0].remove();
   }
   if (inputElem.value.trim() != "") {

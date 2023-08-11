@@ -13,10 +13,33 @@
     <main>
         <section>
             <h2>Input</h2>
-            <textarea name="input" id="input-elem" cols="30" rows="10"></textarea>
+            <textarea name="input" id="input-elem" cols="30" rows="5"></textarea>
             <button id="copy-btn">Copy Below</button>
             <h2>Output</h2>
-            <textarea name="output" id="output-area" cols="30" rows="10" disabled></textarea>
+            <textarea name="output" id="output-area" cols="30" rows="5" disabled></textarea>
+        </section>
+        <section>
+            <div id="program">
+                <div class="head">
+                  <h4>Basic Program:</h4>
+                  <button id="copy">Copy</button>
+                </div>
+                <hr>
+                <div class="code">
+                  <pre>
+
+const inputBox = document.getElementById('input-box');
+const outputBox = document.getElementById('output-box');
+const btn = document.querySelector('button');
+
+function copy() {
+    outputBox.innerText = inputBox.value;
+}
+
+btn.addEventListener('click', copy);
+                  </pre>
+                </div>
+            </div>        
         </section>
     </main>
     <footer>
