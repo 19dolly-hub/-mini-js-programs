@@ -2,6 +2,13 @@ const button = document.querySelector("button");
 const heading = document.querySelector('h3');
 const copyText = document.querySelector('#program pre').innerText;
 
+
+//-------------------
+// THE MAIN FUNCTION    
+//-------------------
+
+
+// function to get the input and print on screen
 function getInput() {
   if(button.textContent.includes("Not")) {
   button.innerText = "Clicked✅";
@@ -15,6 +22,13 @@ function getInput() {
 }
 
 button.addEventListener("click", getInput);
+
+
+//-------------------
+//-------------------
+
+
+// copy to clipboard
 copyBtn.addEventListener('click', (e) => {
   console.log(copyText, e);
   navigator.clipboard.writeText(copyText);
