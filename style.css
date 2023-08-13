@@ -22,8 +22,7 @@ header {
 }
 
 header h4 {
-  -webkit-text-stroke-color: #e9e9e9;
-  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke: 0.5px #e9e9e9;
   color: transparent;
 }
 
@@ -31,15 +30,10 @@ header p {
   font-size: small;
 }
 
-main {
-  height: 100%;
-}
-
 section {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
   padding: 10px 5px;
   gap: 2vh;
   border-bottom: 1px solid slategray;
@@ -55,7 +49,6 @@ section > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1.8px solid rgb(67, 80, 91);
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -73,16 +66,14 @@ section div .btn {
   display: flex;
   flex-direction: row;
   padding: 2vh;
-  gap: 3vh;
+  gap: 2vh;
 }
 
 section div .img {
   height: 10vh;
   width: 28vh;
   background-color: white;
-  margin-top: 2vh;
   border: 1.5px solid rgb(155 173 188);
-  color: rgb(67, 80, 91);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -105,9 +96,7 @@ section div .img {
 
 /* Program title style */
 section div .img h4 {
-  font-size: 16px;
   font-weight: normal;
-  margin: 0;
   padding-top: 10px;
 }
 
@@ -127,7 +116,6 @@ section div .img h4 {
 }
 
 footer {
-  color: rgb(47, 64, 79);
   background-color: rgb(40, 40, 40);
   color: #e9e9e9;
   text-transform: capitalize;
