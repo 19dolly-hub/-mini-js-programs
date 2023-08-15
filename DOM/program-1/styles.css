@@ -24,6 +24,16 @@
     margin: 0;
   }
   
+  a#back {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    left: 8px;
+    top: 16px;
+  }
+
   main {
     height: 100%;
     padding: 20px;

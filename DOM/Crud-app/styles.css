@@ -14,10 +14,23 @@ body {
     padding: 10px;
   }
   
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
   nav h2 {
     margin: 0;
   }
   
+  a#back {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-size: 35px;
+  }
+
   main {
     padding: 20px;
     height: 100%;
