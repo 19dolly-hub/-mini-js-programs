@@ -8,16 +8,42 @@
 </head>
 <body>
     <header>
+        <a href="../../index.html" id="back">←</a>
         <h1>Maximum Number</h1>
     </header>
     <main>
+        <section>
+            <div class="head">
+                <h4>The function to find Maximum number</h4>
+                <button id="copy">Copy</button>
+            </div>
+            <pre id="copyText">
+
+function findMax(arr) {
+    let maxNum = arr[0];
+    for(let i=0; i&lt;arr.length; i++) {
+        if(maxNum &lt; arr[i]) {
+            maxNum = arr[i];
+        }
+        else {
+            maxNum = maxNum;
+        }
+    }
+    return maxNum;
+}
+
+findMax(array);</pre>
+        </section>
+
         <section class="input-section">
             <form id="inputForm">
                 <label for="args">
                     <h3>Input:</h3>
                     <p>Enter numbers separated by commas to form an array of Numbers (e.g., 1, 2, 3, 4)</p>
                 </label>
-                <input type="text" id="args" required>
+                <div>
+                    array = [ <input type="text" id="args" required> ]
+                </div>
                 <button type="submit">Run</button>
             </form>
         </section>
@@ -28,7 +54,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Your Name</p>
+        <p>&copy; 2023</p>
     </footer>
     <script src="arr.js"></script>
 </body>

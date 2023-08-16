@@ -30,7 +30,6 @@ button.addEventListener("click", getInput);
 
 // copy to clipboard
 copyBtn.addEventListener('click', (e) => {
-  console.log(copyText, e);
   navigator.clipboard.writeText(copyText);
   e.target.innerText = "Copied";
   e.target.style.color = "gray";

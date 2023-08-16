@@ -6,6 +6,7 @@ function addToConsole(message) {
   }
   
 
+
 //-------------------
 // THE MAIN FUNCTION    
 //-------------------
@@ -13,8 +14,8 @@ function addToConsole(message) {
 
 // Function to find maximum number from an array
 function findMax(arr) {
-    var maxNum = arr[0];
-    for(var i = 1; i<arr.length; i++) {
+    let maxNum = arr[0];
+    for(let i = 1; i<arr.length; i++) {
         if(maxNum < arr[i]) {
             maxNum = arr[i];
         }
@@ -28,6 +29,7 @@ function findMax(arr) {
 
 //-------------------
 //-------------------
+
 
 
 // Function to execute the selected program with user-provided arguments
@@ -48,3 +50,9 @@ function handleSubmit(event) {
 const form = document.getElementById("inputForm");
 form.addEventListener("submit", handleSubmit);
   
+// Copy to clipboard
+copy.addEventListener('click', (e) => {
+    navigator.clipboard.writeText(copyText.textContent);
+    e.target.innerText = 'Copied';
+    e.target.style.color = '#dadada';
+});
