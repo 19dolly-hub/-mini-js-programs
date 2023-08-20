@@ -109,7 +109,10 @@ function render(arr, id) {
             <div class="dot-container">
               <div class="terminal-dots"></div>
             </div>
-            <h4>${obj.h4}</h4>
+            <div class="hold">
+              <img src="styles/idea-icon.svg" alt="" width="18px">
+              <h4>${obj.h4}</h4>
+            </div>
           </div>
         </a>
         <div class="btn">
