@@ -44,6 +44,7 @@ function handleSubmit(event) {
     event.preventDefault();
     const args = document.getElementById("args").value.split(",").map(Number);
     runProgram(args);
+    document.getElementById("args").value = "";
 }
   
 // Attach the form submission event listener

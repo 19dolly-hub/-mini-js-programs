@@ -7,55 +7,53 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <a href="../../index.html" id="back">←</a>
-        <h1>Maximum Number</h1>
-    </header>
-    <main>
-        <section>
-            <div class="head">
-                <h4>The function to find Maximum number</h4>
-                <button id="copy">Copy</button>
-            </div>
-            <pre id="copyText">
+    <div class="body">
+        <header>
+            <a href="../../index.html" id="back">↩</a>
+            <h2>Maximum Number</h2>
+        </header>
+        <main>
+            <section class="input-section">
+                <form id="inputForm">
+                    <label for="args">
+                        <p>Enter numbers separated by commas to form an array of Numbers (e.g., 1, 2, 3, 4)</p>
+                    </label>
+                    <div>
+                        array = [ <input type="text" id="args" required> ]
+                    </div>
+                    <button type="submit">Run</button>
+                </form>
+            </section>
+            
+            <section class="output-section">
+                <h3>Output Console:</h3>
+                <div id="console"></div>
+            </section>
 
-function findMax(arr) {
-    let maxNum = arr[0];
-    for(let i=0; i&lt;arr.length; i++) {
-        if(maxNum &lt; arr[i]) {
-            maxNum = arr[i];
-        }
-        else {
-            maxNum = maxNum;
-        }
-    }
-    return maxNum;
-}
-
-findMax(array);</pre>
-        </section>
-
-        <section class="input-section">
-            <form id="inputForm">
-                <label for="args">
-                    <h3>Input:</h3>
-                    <p>Enter numbers separated by commas to form an array of Numbers (e.g., 1, 2, 3, 4)</p>
-                </label>
-                <div>
-                    array = [ <input type="text" id="args" required> ]
+            <section>
+                <div class="head">
+                    <h4>The function to find Maximum number</h4>
+                    <button id="copy">Copy</button>
                 </div>
-                <button type="submit">Run</button>
-            </form>
-        </section>
-
-        <section class="output-section">
-            <h3>Output Console:</h3>
-            <div id="console"></div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023</p>
-    </footer>
+                <pre id="copyText">
+    
+    function findMax(arr) {
+        let maxNum = arr[0];
+        for(let i=0; i&lt;arr.length; i++) {
+            if(maxNum &lt; arr[i]) {
+                maxNum = arr[i];
+            }
+            else {
+                maxNum = maxNum;
+            }
+        }
+        return maxNum;
+    }
+    
+    findMax(array);</pre>
+            </section>
+        </main>
+    </div>
     <script src="arr.js"></script>
 </body>
 </html>

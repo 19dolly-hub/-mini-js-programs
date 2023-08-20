@@ -5,30 +5,45 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     font-family: Arial, sans-serif;
     background: linear-gradient(45deg, silver, slategray);
     background-attachment: fixed;
 }
 
-header {
-    background-color: #007BFF;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+.body {
+    width: 80%;
+    height: 90%;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 8px;
 }
 
-header h1 {
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: salmon;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h2 {
+    width: 100%;
     margin: 0;
 }
 
-a#back {
+header a {
     text-decoration: none;
     background-color: transparent;
     color: white;
     font-size: 35px;
-    position: absolute;
-    left: 8px;
-    top: 16px;
   }
 
 main {
@@ -36,26 +51,16 @@ main {
 }
 
 section {
+    width: 90%;
+    margin: auto;
     background-color: #e7e7e7;
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
-.head {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border-bottom: 1px solid ;
-}
-
-section pre {
-    overflow-x: auto;
-}
-
 h3 {
-    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -83,7 +88,7 @@ input[type="text"] {
 button {
     padding: 8px 16px;
     font-size: 16px;
-    background-color: #007BFF;
+    background-color: salmon;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -91,13 +96,11 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-
 #console {
+    width: 80%;
+    margin: auto;
     background-color: #212121;
-    color: #fff;
+    color: yellow;
     font-family: "Courier New", monospace;
     padding: 10px;
     height: 200px;
@@ -105,13 +108,19 @@ button:hover {
     border-radius: 5px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid ;
+    padding-bottom: 5px;
 }
 
-footer p {
-    margin: 0;
+section pre {
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+button:hover {
+    background-color: rgb(210, 106, 95);
 }
