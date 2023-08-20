@@ -16,7 +16,7 @@ function getInput() {
   const input = prompt("Write your name here...");
   alert("Hello " + input + " see the output printed below!");
   
-  heading.innerText = "Hello! amazing " + input.toUpperCase();
+  heading.innerText = "Hello! Amazing😍 " + input.toUpperCase();
   program.style.display = "block";
   }
 }

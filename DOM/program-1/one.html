@@ -7,43 +7,45 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <a href="../../index.html" id="back">←</a>
-    <h1>Prompt & Alert</h1>
-  </header>
-  <main>
-    <section class="prompt-section">
-      <p>Click the button to get input prompt...</p>
-      <button>Not clicked❗</button>
-      <!-- <h3></h3> -->
-    </section>
-    <section class="output-section">
-      <h3></h3>
-      <div id="program">
-        <div class="head">
-          <h4>Basic Program:</h4>
-          <button id="copyBtn">Copy</button>
+  <div class="body">
+    <header>
+      <a href="../../index.html" id="back">↩</a>
+      <h2>Prompt & Alert</h2>
+    </header>
+
+    <main>
+      <section class="prompt-section">
+        <p>Click the button to get input prompt...</p>
+        <button>Not clicked❗</button>
+      </section>
+
+      <section class="output-section">
+        <h3></h3>
+
+        <div id="program">
+          <div class="head">
+            <h4>Basic Program:</h4>
+            <button id="copyBtn">Copy</button>
+          </div>
+          <hr>
+          <div class="code">
+            <pre>
+    
+    const btn = document.querySelector('button');
+              
+    function getPrompt() {
+      const input = prompt('Write your name...');
+      alert('Hello! amazing ' + input.toUpperCase());
+    }
+    
+    btn.addEventListner('click', getPrompt);
+            </pre>
+          </div>
         </div>
-        <hr>
-        <div class="code">
-          <pre>
-  
-  const btn = document.querySelector('button');
-            
-  function getPrompt() {
-    const input = prompt('Write your name...');
-    alert('Hello! amazing ' + input.toUpperCase());
-  }
-  
-  btn.addEventListner('click', getPrompt);
-          </pre>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2023</p>
-  </footer>
+      </section>
+
+    </main>
+  </div>
   <script src="one.js"></script>
 </body>
 </html>
