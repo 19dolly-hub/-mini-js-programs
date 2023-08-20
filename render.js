@@ -1,3 +1,7 @@
+// !! NUM OF HEADINGS = NUM OF RENDER();
+
+const headings = ["DOM", "Array", "Strings", "Maths", "Loops", "Beginner Level Projects"];
+
 const domArr = [
   {
     h4: "Prompt & Alert",
@@ -101,6 +105,15 @@ const projArr = [
 //     code: "",
 //   },
 // ];
+
+let head = Array.from(document.querySelectorAll(".hold"));
+
+head.forEach((tag) => {
+  tag.innerHTML += `
+  <img src="styles/special-icon.svg" alt="" width="32px">
+  <h3>${headings[head.indexOf(tag)]}</h3>
+  `;
+})
 
 function render(arr, id) {
   for (let i = 0; i < arr.length; i++) {

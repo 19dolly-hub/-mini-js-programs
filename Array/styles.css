@@ -16,8 +16,7 @@ body {
 }
 
 .body {
-    width: 80%;
-    height: 90%;
+    width: 90%;
     background-color: white;
     border-radius: 5px;
     overflow: hidden;
@@ -97,8 +96,6 @@ button {
 }
 
 #console {
-    width: 80%;
-    margin: auto;
     background-color: #212121;
     color: yellow;
     font-family: "Courier New", monospace;
