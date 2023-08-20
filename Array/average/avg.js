@@ -13,11 +13,11 @@ function addToConsole(message) {
 
 // Function to find the average of an array
 function findAvg(arr) {
-  var sum = 0;
-  for (var i = 0; i < arr.length; i++) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
     sum += arr[i];
   }
-  var avg = sum / arr.length;
+  let avg = sum / arr.length;
   addToConsole("Average: " + avg); // return avg;
 }
 
@@ -38,8 +38,16 @@ function handleSubmit(event) {
   event.preventDefault();
   const args = document.getElementById("args").value.split(",").map(Number);
   runProgram(args);
+  document.getElementById("args").value = "";
 }
 
 // Attach the form submission event listener
 const form = document.getElementById("inputForm");
 form.addEventListener("submit", handleSubmit);
+
+// Copy to clipboard
+copy.addEventListener('click', (e) => {
+  navigator.clipboard.writeText(copyText.textContent);
+  e.target.innerText = 'Copied';
+  e.target.style.color = '#dadada';
+});

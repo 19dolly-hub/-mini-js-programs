@@ -4,31 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Average</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../maximumNum/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Find Average</h1>
-    </header>
-    <main>
-        <section class="input-section">
-            <form id="inputForm">
-                <label for="args">
-                    <h3>Input:</h3>
-                    <p>Enter numbers separated by commas to form an array of Numbers (e.g., 1, 2, 3, 4)</p>
-                </label>
-                <input type="text" id="args" required>
-                <button type="submit">Run</button>
-            </form>
-        </section>
-        <section class="output-section">
-            <h3>Output Console:</h3>
-            <div id="console"></div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Find Average App</p>
-    </footer>
+    <div class="body">
+        <header>
+            <a href="../../index.html" id="back">↩</a>
+            <h2>Find Average</h2>
+        </header>
+        <main>
+            <section class="input-section">
+                <form id="inputForm">
+                    <label for="args">
+                        <p>Enter numbers separated by commas to form an array of Numbers (e.g., 1, 2, 3, 4)</p>
+                    </label>
+                    <div>
+                        array = [ <input type="text" id="args" required> ]
+                    </div>
+                    <button type="submit">Run</button>
+                </form>
+            </section>
+
+            <section class="output-section">
+                <h3>Output Console:</h3>
+                <div id="console"></div>
+            </section>
+
+            <section>
+                <div class="head">
+                    <h4>The function to find Average</h4>
+                    <button id="copy">Copy</button>
+                </div>
+                <pre id="copyText">
+    
+    function findAvg(arr) {
+        let sum = 0;
+        for(let i=0; i&lt;arr.length; i++) {
+            sum += arr[i];
+        }
+        let avg = sum / arr.length;
+        return avg;
+    }
+    
+    findAvg(array);</pre>
+            </section>
+        </main>
+    </div>
     <script src="avg.js"></script>
 </body>
 </html>
