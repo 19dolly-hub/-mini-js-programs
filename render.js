@@ -9,11 +9,6 @@ const domArr = [
     href: "DOM/program-2/two.html",
     code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/DOM/program-2/two.js",
   },
-  {
-    h4: "CRUD APP",
-    href: "DOM/Crud-app/crud.html",
-    code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/DOM/Crud-app/crud.js",
-  },
 ];
 
 const arrayArr = [
@@ -86,6 +81,14 @@ const apiArr = [
   },
 ];
 
+const projArr = [
+  {
+    h4: "CRUD App",
+    href: "DOM/Crud-app/crud.html",
+    code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/DOM/Crud-app/crud.js",
+  },
+];
+
 // const Arr = [
 //   {
 //     h4: "",
@@ -128,3 +131,4 @@ render(arrayArr, arrays);
 render(stringsArr, strings);
 render(mathsArr, maths);
 render(loopsArr, loops);
+render(projArr, proj)
