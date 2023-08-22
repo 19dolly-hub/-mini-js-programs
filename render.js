@@ -88,17 +88,27 @@ const apiArr = [
 const projArr = [
   {
     h4: "CRUD App",
-    href: "DOM/Crud-app/crud.html",
+    href: "Projects/Crud-app/crud.html",
     code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/DOM/Crud-app/crud.js",
+  },
+  {
+    h4: "Expense Calculator",
+    href: "Projects/Expense-Calc/index.html",
+    code: "/",
+  },
+  {
+    h4: "Bubble Game",
+    href: "Projects/Bubble-game/index.html",
+    code: "/",
   },
 ];
 
 // const Arr = [
-//   {
-//     h4: "",
-//     href: "",
-//     code: "",
-//   },
+// {
+//   h4: "",
+//   href: "",
+//   code: "",
+// },
 //   {
 //     h4: "",
 //     href: "",

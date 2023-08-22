@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #dadada;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.body {
+    width: 700px;
+    height: 100%;
+    background-color: whitesmoke;
+    box-shadow: 0 0 2px;
+}
+.top-container {
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    background-color: royalblue;
+    color: white;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+header {
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+.symbol {
+    font-size: larger;
+    font-weight: 700;
+}
+header h2 {
+    padding-left: 2rem;
+}
+.input-fields {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.field {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+    font-size: large;
+}
+.field input {
+    padding: 2.5px;
+}
+.field1 {
+    border-right: 1px solid;
+    padding-right: 1.5rem;
+}
+.mid-container {
+    position: relative;
+    height: 1rem;
+}
+.middle {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0.6rem;
+}
+.left-half {
+    background-color: white;
+    color: crimson;
+    padding: 0.5rem;
+    padding-right: 2rem;
+    border-radius: 5px;
+    border: 1px solid;
+    border-bottom: 2px solid;
+    border-top: none;
+}
+#addBtn {
+    cursor: pointer;
+    margin-left: 3rem;
+    border-radius: 50%;
+    padding: 7px 12px;
+    background-color: crimson;
+    color: white;
+    border-color: white;
+}
+.bottom-container {
+    max-height: 60%;
+    overflow-y: auto;
+    padding: 1rem;
+}
+.bottom-container ul {
+    list-style: none;
+}
+ul li {
+    border-bottom: 1px solid;
+    border-color: gainsboro;
+    margin-bottom: 1rem;
+}
+.bottom-container small {
+    color: royalblue;
+}
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+.remBtn {
+    cursor: pointer;
+    color: royalblue;
+    padding: 3px;
+    background-color: transparent;
+    border-color: royalblue;
+}
+
+@media (max-width: 451px) {
+    .field input {
+        width: 30vw;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="body">
+      <div class="top-container">
+        <header>
+          <a href="/" class="symbol">⇽</a>
+          <h2>Expense Calculator</h2>
+        </header>
+
+        <div class="input-fields">
+          <div class="field1">
+            <label for="inputDesc">Description : </label>
+            <div class="field">
+              <span class="badge">@</span>
+              <input
+                type="text"
+                placeholder="Expense Description"
+                id="inputDesc"
+              />
+            </div>
+          </div>
+
+          <div class="field2">
+            <label for="inputAmt">Amount : </label>
+            <div class="field">
+              <span class="badge">₹</span>
+              <input type="number" placeholder="Amount Spent" id="inputAmt" />
+            </div>
+          </div>
+        </div>
+
+        <div class="mid-container">
+          <div class="middle">
+            <div class="left-half">
+              <h3>Total Expenses : ₹<span id="totalAmt">0</span></h3>
+            </div>
+            <button id="addBtn" class="symbol">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-container">
+        <ul id="expenseTable"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
