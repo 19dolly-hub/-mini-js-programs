@@ -47,7 +47,7 @@ function render(amount, description, date) {
     listItem.appendChild(document.createElement("br"));
     listItem.appendChild(listItemContent);
 
-    tableEl.appendChild(listItem);
+    tableEl.prepend(listItem);
 }
 
 function addDate(theDate) {
