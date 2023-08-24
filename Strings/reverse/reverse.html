@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reverse the String</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Reverse the String</h1>
-    </header>
-    <main>
-        <section>
-            <form id="input-form">
-                <label for="string">
-                    <h3>Input:</h3>
-                    <p>Enter any English word to reverse it (e.g. : Hello)</p>
-                </label>
-                <input type="text" name="string" id="string" required>
-                <button type="submit">Reverse</button>
-            </form>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="body">
+      <header>
+        <a href="../../index.html" id="back">↩</a>
+        <h2>Reverse the String</h2>
+      </header>
+      <main>
+        <section class="input-section">
+          <form id="input-form">
+
+            <label for="string">
+              <h3>Input:</h3>
+              <p>Enter any English word to reverse it (e.g. : Hello)</p>
+            </label>
+            <div>
+               string ="<input type="text" name="string" id="string" required />"
+            </div>
+
+            <button type="submit">Reverse</button>
+          </form>
         </section>
-        <section>
-            <h3>Output:</h3>
-            <output id="print-area"></output>
+
+        <section class="output-section">
+          <h3>Output:</h3>
+          <output id="print-area"></output>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Your Name</p>
-    </footer>
+
+        <section>
+          <div class="head">
+            <h4>The function to reverse the string</h4>
+            <button id="copy">Copy</button>
+          </div>
+          <pre id="copyText">
+ function reverseIt(str) {
+    let strArr = str.split("");
+    let reversedArr = strArr.reverse();
+    let reversedStr = reversedArr.join("");
+   
+    return reversedStr;
+ }
+ reverseIt(string); </pre
+          >
+        </section>
+      </main>
+    </div>
     <script src="reverse.js"></script>
-</body>
+  </body>
 </html>

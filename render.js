@@ -98,7 +98,7 @@ const projArr = [
   },
   {
     h4: "Bubble Game",
-    href: "Projects/Bubble-game/index.html",
+    href: "Projects/BubbleGame/index.html",
     code: "/",
   },
 ];
