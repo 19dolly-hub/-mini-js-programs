@@ -1,6 +1,6 @@
-// !! NUM OF HEADINGS = NUM OF RENDER();
+// !! NUM OF HEADINGS = NUM OF RENDER() && NUM OF HOLD DIVS IN HTML
 
-const headings = ["DOM", "Array", "Strings", "Maths", "Loops", "Beginner Level Projects"];
+const headings = ["DOM", "Arrays and Loops", "Strings", "Maths", "Beginner Level Projects"];
 
 const domArr = [
   {
@@ -25,6 +25,11 @@ const arrayArr = [
     h4: "Average",
     href: "Array/average/avg.html",
     code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/Array/average/avg.js",
+  },
+  {
+    h4: "Star patterns",
+    href: "Loops/Star-pattern/star.html",
+    code: "/",
   },
 ];
 
@@ -60,14 +65,6 @@ const mathsArr = [
   {
     h4: "Modulo",
     href: "Math/Modulo/modulo.html",
-    code: "/",
-  },
-];
-
-const loopsArr = [
-  {
-    h4: "Star patterns",
-    href: "Loops/Star-pattern/star.html",
     code: "/",
   },
 ];
@@ -153,5 +150,4 @@ render(domArr, dom);
 render(arrayArr, arrays);
 render(stringsArr, strings);
 render(mathsArr, maths);
-render(loopsArr, loops);
 render(projArr, proj)
