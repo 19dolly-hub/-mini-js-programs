@@ -1,6 +1,6 @@
 // !! NUM OF HEADINGS = NUM OF RENDER() && NUM OF HOLD DIVS IN HTML
 
-const headings = ["DOM", "Arrays and Loops", "Strings", "Maths", "Beginner Level Projects"];
+const headings = ["DOM", "Arrays and Loops", "Strings", "Beginner Level Projects"];
 
 const domArr = [
   {
@@ -154,5 +154,5 @@ function render(arr, id) {
 render(domArr, dom);
 render(arrayArr, arrays);
 render(stringsArr, strings);
-render(mathsArr, maths);
+// render(mathsArr, maths);
 render(projArr, proj)
