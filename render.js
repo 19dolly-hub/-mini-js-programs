@@ -33,8 +33,8 @@ const arrayArr = [
   },
   {
     h4: "Star patterns",
-    href: "Loops/Star-pattern/star.html",
-    code: "/",
+    href: "Array/Star-pattern/star.html",
+    code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/Array/Star-pattern/star.js",
   },
 ];
 
@@ -68,9 +68,9 @@ const stringsArr = [
 
 const mathsArr = [
   {
-    h4: "Modulo",
+    h4: "Remainder",
     href: "Math/Modulo/modulo.html",
-    code: "/",
+    code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/Math/Modulo/modulo.js",
   },
 ];
 
@@ -91,17 +91,17 @@ const projArr = [
   {
     h4: "CRUD App",
     href: "Projects/Crud-app/crud.html",
-    code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/DOM/Crud-app/crud.js",
+    code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/Projects/Crud-app/crud.js",
   },
   {
     h4: "Expense Calculator",
     href: "Projects/Expense-Calc/index.html",
-    code: "/",
+    code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/Projects/Expense-Calc/script.js",
   },
   {
     h4: "Bubble Game",
     href: "Projects/BubbleGame/index.html",
-    code: "/",
+    code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/Projects/BubbleGame/script.js",
   },
 ];
 
