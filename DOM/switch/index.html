@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+        <a href="/">↩</a>
+        <h2>Light Switch</h2>
+    </header>
+
+    <main>
+      <div class="btn">
+        <div class="btnOff"></div>
+      </div>
+
+      <div class="board">
+        <pre>
+ const room = document.querySelector("body");
+ const btn = document.querySelector(".btnOff");
+ let tap = 0;
+
+ btn.addEventListener("click", () => {
+
+   if (tap == 0) {
+     room.style.backgroundColor = "#dadada";
+     tap = 1;
+   } else {
+     room.style.backgroundColor = "black";
+     tap = 0;
+   }
+
+ })</pre
+        >
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

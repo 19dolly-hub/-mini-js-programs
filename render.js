@@ -13,6 +13,11 @@ const domArr = [
     href: "DOM/program-2/two.html",
     code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/DOM/program-2/two.js",
   },
+  {
+    h4: "Switch",
+    href: "DOM/switch/index.html",
+    code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/DOM/switch/script.js",
+  },  
 ];
 
 const arrayArr = [
