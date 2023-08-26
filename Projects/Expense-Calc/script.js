@@ -7,7 +7,7 @@ const tableEl = document.getElementById("expenseTable");
 let totalExp = 0;
 
 addBtn.addEventListener('click',() => {
-    const desc = descField.value;
+    const desc = descField.value.trim();
     const amt = parseInt(amtField.value, 10);
     const dt = new Date();
     const isNotEmpty = amt != "" && desc != "";
