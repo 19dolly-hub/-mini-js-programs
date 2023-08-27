@@ -95,16 +95,6 @@ button {
     transition: background-color 0.3s ease;
 }
 
-#console {
-    background-color: #212121;
-    color: yellow;
-    font-family: "Courier New", monospace;
-    padding: 10px;
-    height: 200px;
-    overflow-y: scroll;
-    border-radius: 5px;
-}
-
 .head {
     display: flex;
     justify-content: space-between;

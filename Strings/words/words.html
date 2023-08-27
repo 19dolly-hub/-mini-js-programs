@@ -3,16 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Words Play</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
+<style>
+    .case {
+        display: flex;
+        height: 18vmax;
+        overflow-y: auto;
+        gap: 0.5rem;
+        word-wrap: break-word;
+    }
+    .case div {
+        width: 33%;
+    }
+    .count {
+        display: flex;
+        justify-content: space-around;
+    }
+    span {
+        color: black;
+    }
+    .input-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #msg-alert {
+        padding-top: 5px;
+        color: red;
+    }
+</style>
 <body>
-        <label for="input">Write anything...</label>
-        <input type="text" id="input" maxlength="200">
-        <p>Letter count: <span id="letter-count">0</span> | Max-length: 200</p>
-        <p>Word count: <span id="word-count">0</span></p>
-        <p>Uppercase: <span id="uppercase"></span></p>
-        <p>Lowercase: <span id="lowercase"></span></p>
-        <p>Abbreviation: <span id="abbre"></span></p>
-    <script src="abbr.js"></script>
+    <div class="body">
+        <header>
+            <a href="/">↩</a>
+            <h2>Words Play</h2>
+        </header>
+        <main>
+            <section>
+                <p>Preview: <span id="box"></span></p>
+            </section>
+            <section class="case">
+                <div>
+                    <p>Uppercase:</p>
+                    <span id="uppercase"></span>
+                </div>
+                <div>
+                    <p>Lowercase:</p>
+                    <span id="lowercase"></span>
+                </div>
+                <div>
+                    <p>Abbreviation:</p>
+                    <span id="abbr"></span>
+                </div>
+            </section>
+            <div class="count">
+                <p>Word count: <span id="word-count">19</span></p>
+                <p>Letter count: <span id="letter-count">98</span> | Max-length: 200</p>
+            </div>
+            <section class="input-area">
+                <label for="input">Write anything (sentence, words) below....</label>
+                <br>
+                <textarea type="text" id="input" maxlength="200" rows="5" cols="45">Sorry for late reply i was busy in some important task and thanks for reminding me about the event</textarea>
+                <p id="msg-alert"></p>
+            </section>
+        </main>
+    </div>
+    <script src="words.js"></script>
 </body>
 </html>

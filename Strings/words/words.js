@@ -1,45 +1,37 @@
-function abbr(s1, s2) {
-    let result = s1.charAt(0).trim() + s2.charAt(0).trim(); // if space is given before both the arguments
-    return result;
-}
+const inputField = document.getElementById("input");
+const letterCount = document.getElementById("letter-count");
+const wordCount = document.getElementById("word-count");
+const uppercase = document.getElementById("uppercase");
+const lowercase = document.getElementById("lowercase");
+const abbr = document.getElementById("abbr");
+const msg = document.getElementById("msg-alert");
+const previewBox = document.getElementById("box");
 
-let arr = [];
-let input;
-let p = input.split(" ");
-let letterCount = input.length;
-let wordCount = p.length;
-let upper = input.toUpperCase;
+inputField.addEventListener("input", (e) => {
+    e.preventDefault();
 
-function abbr(string) {
-    let result = string.charAt(0).trim();
-    arr.push(result);
-}
+    const input = inputField.value.trim();
+    letterCount.innerText = input.length;
 
-p.forEach((str) => {
-    abbr(str);
-});
-
-arr.join('').toUpperCase();
-
-function props(str) {
-    let charNum = "Number of words: " + str.length + ',';
-    let changeCase = str.toUpperCase() + str.toLowerCase() + ' etc';
-
-    let result = charNum + changeCase;
-    return result;
-}
-
-function firstWord(str) {
-    let words = str.trim();
-    let space = words.indexOf(' ');
+    const words = input.split(" ");
+    wordCount.innerText = words.length;
     
-    let result = words.substr(0, space);
-    return result;
-}
+    uppercase.innerText = input.toUpperCase();
+    lowercase.innerText = input.toLowerCase();
 
-function normalize(str) {
-    let norm = str.replace('-', '/');
-    let newNorm = norm.replace('-', '/');
+    const abbrArr = [];
+    words.forEach((string) => {
+        const firstLetter = string.charAt(0).trim();
+        abbrArr.push(firstLetter);
+    });
+    abbr.innerText = abbrArr.join("").toUpperCase();
 
-    return newNorm;
-}
+    if (input.length == 200) {
+        msg.innerText = "You have reached the maximum limit!";
+    }
+    else {
+        msg.innerText = "";
+    }
+
+    previewBox.innerText = input.substr(0, 30) + "...";
+});
