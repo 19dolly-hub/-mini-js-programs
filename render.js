@@ -14,7 +14,7 @@ const domArr = [
     code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/DOM/program-2/two.js",
   },
   {
-    h4: "Switch",
+    h4: "Switch Mode",
     href: "DOM/switch/index.html",
     code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/DOM/switch/script.js",
   },  
@@ -31,11 +31,11 @@ const arrayArr = [
     href: "Array/average/avg.html",
     code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/Array/average/avg.js",
   },
-  {
-    h4: "Star patterns",
-    href: "Array/Star-pattern/star.html",
-    code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/Array/Star-pattern/star.js",
-  },
+  // {
+  //   h4: "Star patterns",
+  //   href: "Array/Star-pattern/star.html",
+  //   code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/Array/Star-pattern/star.js",
+  // },
 ];
 
 const stringsArr = [
@@ -49,11 +49,11 @@ const stringsArr = [
     href: "Strings/words/words.html",
     code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/Strings/words/words.js",
   },
-  {
-    h4: "Features",
-    href: "Strings/indexOf/indexof.html",
-    code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/Strings/indexOf/index.js",
-  },
+  // {
+  //   h4: "Features",
+  //   href: "Strings/indexOf/indexof.html",
+  //   code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/Strings/indexOf/index.js",
+  // },
 ];
 
 const mathsArr = [
