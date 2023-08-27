@@ -45,24 +45,14 @@ const stringsArr = [
     code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/Strings/reverse/reverse.js",
   },
   {
-    h4: "Props & Methods*",
-    href: "Strings/props-methods/str.html",
-    code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/Strings/props-methods/str.js",
+    h4: "Words Play",
+    href: "Strings/words/words.html",
+    code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/Strings/words/words.js",
   },
   {
-    h4: "is String = strinG ?",
-    href: "Strings/caseSenstive/case.html",
-    code: "/",
-  },
-  {
-    h4: "Abbreviator",
-    href: "Strings/abbreviator/abbr.html",
-    code: "/",
-  },
-  {
-    h4: "indexOf",
+    h4: "Features",
     href: "Strings/indexOf/indexof.html",
-    code: "/",
+    code: "https://github.com/19dolly-hub/-mini-js-programs/blob/main/Strings/indexOf/index.js",
   },
 ];
 
