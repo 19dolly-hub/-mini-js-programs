@@ -16,13 +16,12 @@ addBtn.addEventListener('click',() => {
         totalExp += amt;
         totalEl.innerText = totalExp;
         render(amt, desc, dt);
+        descField.value = "";
+        amtField.value = "";
     }
     else {
         alert("Please fill both the fields!");
     }
-
-    descField.value = "";
-    amtField.value = "";
 });
 
 function render(amount, description, date) {
